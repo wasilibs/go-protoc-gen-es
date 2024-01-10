@@ -1,4 +1,4 @@
-module github.com/wasilibs/go-sql-formatter
+module github.com/wasilibs/go-protoc-gen-es
 
 go 1.21
 

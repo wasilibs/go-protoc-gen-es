@@ -3,8 +3,8 @@ package main
 import (
 	"os"
 
-	"github.com/wasilibs/go-sql-formatter/internal/runner"
-	"github.com/wasilibs/go-sql-formatter/internal/wasm"
+	"github.com/wasilibs/go-protoc-gen-es/internal/runner"
+	"github.com/wasilibs/go-protoc-gen-es/internal/wasm"
 )
 
 func main() {
