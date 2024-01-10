@@ -1,0 +1,19 @@
+--- dist/protoc-gen-es.js	2024-01-10 13:50:34.085090150 +0900
++++ dist/protoc-gen-es-new.js	2024-01-10 13:51:01.595220771 +0900
+@@ -1,3 +1,6 @@
++// run-quickjs.ts
++import { exit, err as stderr, in as stdin, out as stdout } from "std";
++
+ var __create = Object.create;
+ var __defProp = Object.defineProperty;
+ var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+@@ -170505,9 +170508,6 @@
+   generateDts
+ });
+ 
+-// run-quickjs.ts
+-import { exit, err as stderr, in as stdin, out as stdout } from "std";
+-
+ // error.ts
+ var PluginOptionError2 = class extends Error {
+   constructor(option, reason) {

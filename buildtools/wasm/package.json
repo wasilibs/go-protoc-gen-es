@@ -1,0 +1,22 @@
+{
+  "name": "wasm",
+  "version": "1.6.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "build": "esbuild --external:std --bundle protoc-gen-es.ts --format=esm --outfile=dist/protoc-gen-es.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "packageManager": "pnpm@8.14.0",
+  "devDependencies": {
+    "@bufbuild/protoc-gen-es": "1.6.0",
+    "@bufbuild/protobuf": "1.6.0",
+    "@bufbuild/protoplugin": "1.6.0",
+    "@types/quickjs": "github:Gottox/quickjs-dts",
+    "esbuild": "^0.19.11",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3"
+  }
+}
