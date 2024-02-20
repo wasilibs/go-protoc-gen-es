@@ -27,6 +27,7 @@ jobs:
       
       - name: Update upstream
         run: pnpm up --latest "@bufbuild/*""
+        working-directory: buildtools/wasm
       
       - run: git diff --exit-code
         id: check-diff
