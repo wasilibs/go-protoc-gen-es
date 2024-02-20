@@ -19,6 +19,8 @@ jobs:
           go-version-file: go.work
       
       - uses: pnpm/action-setup@v3
+        with:
+          package_json_file: buildtools/wasm/package.json
       
       - uses: actions/setup-node@v4
         with:
