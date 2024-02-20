@@ -28,7 +28,7 @@ jobs:
           cache-dependency-path: buildtools/wasm/pnpm-lock.yaml
       
       - name: Update upstream
-        run: pnpm up --latest "@bufbuild/*""
+        run: pnpm up --latest "@bufbuild/*"
         working-directory: buildtools/wasm
       
       - run: git diff --exit-code
