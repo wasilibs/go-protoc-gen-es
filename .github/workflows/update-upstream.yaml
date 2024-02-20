@@ -18,12 +18,12 @@ jobs:
         with:
           go-version-file: go.work
       
+      - uses: pnpm/action-setup@v3
+      
       - uses: actions/setup-node@v4
         with:
           cache: pnpm
           cache-dependency-path: buildtools/wasm/pnpm-lock.yaml
-      
-      - uses: pnpm/action-setup@v3
       
       - name: Update upstream
         run: pnpm up --latest "@bufbuild/*""
