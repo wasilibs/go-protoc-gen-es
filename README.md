@@ -37,7 +37,7 @@ recommended to specify a version, in which case all of the developers on your co
 same version of the tool with no special steps.
 
 See a full [example][5] in `go-protoc-gen-builtins`. To generate protos, enter the directory and run
-`go run github.com/bufbuild/buf/cmd/buf@v1.28.1 generate`. As long as your machine has Go installed,
+`go run github.com/bufbuild/buf/cmd/buf@v1.30.0 generate`. As long as your machine has Go installed,
 you will be able to generate protos. The first time using `go run` for a command, Go automatically builds
 it making it slower, but subsequent invocations should be quite fast.
 
