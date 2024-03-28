@@ -14,7 +14,7 @@ func TestBuf(t *testing.T) {
 	}
 
 	output := bytes.Buffer{}
-	cmd := exec.Command("go", "run", "github.com/bufbuild/buf/cmd/buf@v1.28.1", "generate")
+	cmd := exec.Command("go", "run", "github.com/bufbuild/buf/cmd/buf@v1.30.0", "generate")
 	cmd.Stderr = &output
 	cmd.Stdout = &output
 	cmd.Dir = "testdata"
