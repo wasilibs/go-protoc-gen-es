@@ -7,8 +7,8 @@ import (
 
 func main() {
 	tasks.Define(tasks.Params{
-		LibraryName: "protoc",
-		LibraryRepo: "protocolbuffers/protobuf",
+		LibraryName: "protoc-gen-es",
+		LibraryRepo: "bufbuild/protobuf-es",
 		GoReleaser:  true,
 	})
 	boot.Main()
