@@ -1,9 +1,9 @@
 version: v1
 plugins:
-  - plugin: es
-    out: ../build/buf/es
-    path: ["go", "run", "../cmd/protoc-gen-es"]
-  - plugin: ts
-    out: ../build/buf/ts
-    opt: target=ts
-    path: ["go", "run", "../cmd/protoc-gen-es"]
+- plugin: es
+  out: ../out/buf/es
+  path: ["go", "run", "../cmd/protoc-gen-es"]
+- plugin: ts
+  out: ../out/buf/ts
+  opt: target=ts
+  path: ["go", "run", "../cmd/protoc-gen-es"]
