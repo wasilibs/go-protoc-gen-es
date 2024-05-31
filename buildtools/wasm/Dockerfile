@@ -7,10 +7,9 @@ RUN corepack enable
 COPY buildtools/wasm/package.json buildtools/wasm/pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile
 COPY buildtools/wasm/*.ts ./
+COPY buildtools/wasm/*.mjs ./
 COPY buildtools/wasm/tsconfig.json ./
 RUN pnpm run build
-COPY buildtools/wasm/patch.txt ./
-RUN patch -p0 < patch.txt
 
 FROM ghcr.io/webassembly/wasi-sdk:wasi-sdk-21
 
