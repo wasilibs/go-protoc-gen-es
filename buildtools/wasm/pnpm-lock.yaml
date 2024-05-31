@@ -6,14 +6,14 @@ settings:
 
 devDependencies:
   '@bufbuild/protobuf':
-    specifier: 1.9.0
-    version: 1.9.0
+    specifier: 1.10.0
+    version: 1.10.0
   '@bufbuild/protoc-gen-es':
-    specifier: 1.9.0
-    version: 1.9.0(@bufbuild/protobuf@1.9.0)
+    specifier: 1.10.0
+    version: 1.10.0(@bufbuild/protobuf@1.10.0)
   '@bufbuild/protoplugin':
-    specifier: 1.9.0
-    version: 1.9.0
+    specifier: 1.10.0
+    version: 1.10.0
   '@types/quickjs':
     specifier: github:Gottox/quickjs-dts
     version: github.com/Gottox/quickjs-dts/c4bbd816ce58ba0b8f40eaef960f31b49f737bcc
@@ -29,31 +29,31 @@ devDependencies:
 
 packages:
 
-  /@bufbuild/protobuf@1.9.0:
-    resolution: {integrity: sha512-W7gp8Q/v1NlCZLsv8pQ3Y0uCu/SHgXOVFK+eUluUKWXmsb6VHkpNx0apdOWWcDbB9sJoKeP8uPrjmehJz6xETQ==}
+  /@bufbuild/protobuf@1.10.0:
+    resolution: {integrity: sha512-QDdVFLoN93Zjg36NoQPZfsVH9tZew7wKDKyV5qRdj8ntT4wQCOradQjRaTdwMhWUYsgKsvCINKKm87FdEk96Ag==}
     dev: true
 
-  /@bufbuild/protoc-gen-es@1.9.0(@bufbuild/protobuf@1.9.0):
-    resolution: {integrity: sha512-LJy1nC3Jsfdhs9v48P7qF6YXIqh+usFhXSVzJDTmw0yKjxQ3CKBNISRtaMql/g9hb1MLRU6unHCcFfdz4HSO/Q==}
+  /@bufbuild/protoc-gen-es@1.10.0(@bufbuild/protobuf@1.10.0):
+    resolution: {integrity: sha512-zBYBsVT/ul4uZb6F+kD7/k4sWNHVVbEPfJwKi0FDr+9VJo8MKIofI6pkr5ksBLr4fi/74r+e/75Xi/0clL5dXg==}
     engines: {node: '>=14'}
     hasBin: true
     peerDependencies:
-      '@bufbuild/protobuf': 1.9.0
+      '@bufbuild/protobuf': 1.10.0
     peerDependenciesMeta:
       '@bufbuild/protobuf':
         optional: true
     dependencies:
-      '@bufbuild/protobuf': 1.9.0
-      '@bufbuild/protoplugin': 1.9.0
+      '@bufbuild/protobuf': 1.10.0
+      '@bufbuild/protoplugin': 1.10.0
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /@bufbuild/protoplugin@1.9.0:
-    resolution: {integrity: sha512-/mxMiGs5h78RUHT7v4+mv0Wt0gyRf/SOS5PLzKEg2sclEAlFPbXfZ8HjlvxJpXZP/YpP3HvsW/mil3E69G0mXg==}
+  /@bufbuild/protoplugin@1.10.0:
+    resolution: {integrity: sha512-u6NE4vL0lw1+EK4/PiE/SQB7fKO4LRJNTEScIXVOi2x88K/c8WKc/k0KyEaA0asVBMpwekJQZGnRyj04ZtN5Gg==}
     dependencies:
-      '@bufbuild/protobuf': 1.9.0
-      '@typescript/vfs': 1.5.0
+      '@bufbuild/protobuf': 1.10.0
+      '@typescript/vfs': 1.5.1
       typescript: 4.5.2
     transitivePeerDependencies:
       - supports-color
@@ -266,8 +266,8 @@ packages:
     dev: true
     optional: true
 
-  /@typescript/vfs@1.5.0:
-    resolution: {integrity: sha512-AJS307bPgbsZZ9ggCT3wwpg3VbTKMFNHfaY/uF0ahSkYYrPF2dSSKDNIDIQAHm9qJqbLvCsSJH7yN4Vs/CsMMg==}
+  /@typescript/vfs@1.5.1:
+    resolution: {integrity: sha512-yaTdEeMCc31H6wMIqMbf69n89xGQyYQr9hmPMmB4K5LonbefYuV+f9AR2Iuh6itm1+NLes8+BZf4il30BBR5Mw==}
     dependencies:
       debug: 4.3.4
     transitivePeerDependencies:
