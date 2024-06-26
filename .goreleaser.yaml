@@ -1,25 +1,26 @@
+project_name: protoc-gen-es
 builds:
-- main: ./cmd/protoc-gen-es
-  id: es
-  binary: protoc-gen-es
-  env:
-  - CGO_ENABLED=0
-  targets:
-  - linux_amd64
-  - linux_arm64
-  - darwin_amd64
-  - darwin_arm64
-  - windows_amd64
-  - windows_arm64
+  - main: ./cmd/protoc-gen-es
+    id: es
+    binary: protoc-gen-es
+    env:
+      - CGO_ENABLED=0
+    targets:
+      - linux_amd64
+      - linux_arm64
+      - darwin_amd64
+      - darwin_arm64
+      - windows_amd64
+      - windows_arm64
 archives:
-- format_overrides:
-  - goos: windows
-    format: zip
+  - format_overrides:
+      - goos: windows
+        format: zip
 release:
   mode: append
 checksum:
-  name_template: 'checksums.txt'
+  name_template: "checksums.txt"
 snapshot:
   name_template: "{{ incpatch .Version }}-next"
 changelog:
-  skip: true
+  disable: true
