@@ -15,8 +15,8 @@
     "@bufbuild/protoc-gen-es": "1.10.0",
     "@bufbuild/protoplugin": "1.10.0",
     "@types/quickjs": "github:Gottox/quickjs-dts",
-    "esbuild": "^0.21.5",
-    "prettier": "^3.3.2",
-    "typescript": "^5.5.2"
+    "esbuild": "^0.23.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.3"
   }
 }
