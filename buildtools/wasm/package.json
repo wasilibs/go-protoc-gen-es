@@ -11,9 +11,9 @@
   "license": "MIT",
   "packageManager": "pnpm@8.14.0",
   "devDependencies": {
-    "@bufbuild/protobuf": "1.10.0",
-    "@bufbuild/protoc-gen-es": "1.10.0",
-    "@bufbuild/protoplugin": "1.10.0",
+    "@bufbuild/protobuf": "2.0.0",
+    "@bufbuild/protoc-gen-es": "2.0.0",
+    "@bufbuild/protoplugin": "2.0.0",
     "@types/quickjs": "github:Gottox/quickjs-dts",
     "esbuild": "^0.23.0",
     "prettier": "^3.3.3",
