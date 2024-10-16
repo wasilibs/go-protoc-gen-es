@@ -15,7 +15,8 @@
 import { exit, err as stderr, in as stdin, out as stdout } from "std";
 
 import type { Plugin } from "@bufbuild/protoplugin";
-import { CodeGeneratorRequest } from "@bufbuild/protobuf";
+import { fromBinary, toBinary } from "@bufbuild/protobuf";
+import { CodeGeneratorRequestSchema, CodeGeneratorResponseSchema } from "@bufbuild/protobuf/wkt";
 import { PluginOptionError, reasonToString } from "./error.js";
 
 export function runQuickJs(plugin: Plugin): void {
@@ -42,9 +43,9 @@ export function runQuickJs(plugin: Plugin): void {
       bytes.push(byte);
     }
     const data = new Uint8Array(bytes);
-    const req = CodeGeneratorRequest.fromBinary(data);
+    const req = fromBinary(CodeGeneratorRequestSchema, data);
     const res = plugin.run(req);
-    const resBinary = res.toBinary();
+    const resBinary = toBinary(CodeGeneratorResponseSchema, res);
     stdout.write(resBinary.buffer, 0, resBinary.length);
     exit(0);
   } catch (reason) {
