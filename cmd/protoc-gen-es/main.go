@@ -3,8 +3,8 @@ package main
 import (
 	"os"
 
-	"github.com/wasilibs/go-protoc-gen-es/internal/runner"
-	"github.com/wasilibs/go-protoc-gen-es/internal/wasm"
+	"github.com/wasilibs/go-protoc-gen-es/v2/internal/runner"
+	"github.com/wasilibs/go-protoc-gen-es/v2/internal/wasm"
 )
 
 func main() {

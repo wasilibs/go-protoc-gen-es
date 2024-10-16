@@ -1,4 +1,4 @@
-module github.com/wasilibs/go-protoc-gen-es
+module github.com/wasilibs/go-protoc-gen-es/v2
 
 go 1.22
 
