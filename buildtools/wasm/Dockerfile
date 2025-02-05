@@ -1,4 +1,4 @@
-FROM node:20-bookworm AS buildjs
+FROM node:23-bookworm AS buildjs
 
 WORKDIR /app
 
