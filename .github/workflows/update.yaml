@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   build:
-    uses: wasilibs/actions/.github/workflows/update-node.yaml@eeee5d072ee283c12eb68e2c4969012fae3d6dd0
+    uses: wasilibs/actions/.github/workflows/update-node.yaml@e3a87366ddfbb45ab5c1f8f90b7ee3a2fd652715
     with:
       packages: "@bufbuild/*"
     secrets: inherit
