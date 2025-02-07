@@ -13,5 +13,5 @@ jobs:
   build:
     uses: wasilibs/actions/.github/workflows/update-node.yaml@e3a87366ddfbb45ab5c1f8f90b7ee3a2fd652715
     with:
-      packages: "@bufbuild/*"
+      packages: "@bufbuild/protoc-gen-es"
     secrets: inherit
