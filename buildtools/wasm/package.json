@@ -4,18 +4,20 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "build": "mkdir -p dist && esbuild --external:std --bundle protoc-gen-es.ts --format=esm | node hoist-imports.mjs > dist/protoc-gen-es.js"
+    "build": "mkdir -p dist && bun build --external std protoc-gen-es.ts | bun run hoist-imports.ts > dist/protoc-gen-es.js"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "packageManager": "pnpm@8.14.0",
-  "devDependencies": {
+  "packageManager": "bun@1.2.2",
+  "dependencies": {
     "@bufbuild/protobuf": "2.2.3",
-    "@bufbuild/protoc-gen-es": "2.2.3",
-    "@bufbuild/protoplugin": "2.2.3",
+    "@bufbuild/protoc-gen-es": "2.2.2",
+    "@bufbuild/protoplugin": "2.2.3"
+  },
+  "devDependencies": {
     "@types/quickjs": "github:Gottox/quickjs-dts",
-    "esbuild": "^0.24.2",
+    "@types/node": "^22.13.1",
     "prettier": "^3.4.2",
     "typescript": "^5.7.3"
   }
