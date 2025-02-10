@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   build:
-    uses: wasilibs/actions/.github/workflows/update-node.yaml@e3a87366ddfbb45ab5c1f8f90b7ee3a2fd652715
+    uses: wasilibs/actions/.github/workflows/update-node.yaml@a2cd2bff4c41a1a0333323178fc6af7481b13520
     with:
       packages: "@bufbuild/protoc-gen-es"
     secrets: inherit
