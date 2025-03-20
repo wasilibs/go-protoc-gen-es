@@ -11,9 +11,9 @@
   "license": "MIT",
   "packageManager": "bun@1.2.2",
   "dependencies": {
-    "@bufbuild/protobuf": "2.2.4",
-    "@bufbuild/protoc-gen-es": "2.2.4",
-    "@bufbuild/protoplugin": "2.2.4"
+    "@bufbuild/protobuf": "2.2.5",
+    "@bufbuild/protoc-gen-es": "2.2.5",
+    "@bufbuild/protoplugin": "2.2.5"
   },
   "devDependencies": {
     "@types/quickjs": "github:Gottox/quickjs-dts",
