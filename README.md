@@ -12,7 +12,7 @@ Precompiled binaries are available in the [releases](https://github.com/wasilibs
 Alternatively, install the plugin using `go install`.
 
 ```bash
-$ go install github.com/wasilibs/go-protoc-gen-es/cmd/protoc-gen-es@latest
+$ go install github.com/wasilibs/go-protoc-gen-es/v2/cmd/protoc-gen-es@latest
 ```
 
 As long as `$GOPATH/bin`, e.g. `~/go/bin` is on the `PATH`, you can use it with protoc as normal.
@@ -31,7 +31,7 @@ plugins:
     path:
       - "go"
       - "run"
-      - "github.com/wasilibs/go-protoc-gen-es/cmd/protoc-gen-es@latest"
+      - "github.com/wasilibs/go-protoc-gen-es/v2/cmd/protoc-gen-es@latest"
 ```
 
 This makes it possible to have full protobuf/gRPC generation with no installation of tools,
@@ -40,7 +40,7 @@ recommended to specify a version, in which case all of the developers on your co
 same version of the tool with no special steps.
 
 See a full [example][5] in `go-protoc-gen-builtins`. To generate protos, enter the directory and run
-`go run github.com/bufbuild/buf/cmd/buf@v1.30.0 generate`. As long as your machine has Go installed,
+`go run github.com/bufbuild/buf/cmd/buf@v1.55.1 generate`. As long as your machine has Go installed,
 you will be able to generate protos. The first time using `go run` for a command, Go automatically builds
 it making it slower, but subsequent invocations should be quite fast.
 
