@@ -1,4 +1,4 @@
-package protoc_gen_es
+package protocgenes
 
 import (
 	"bytes"

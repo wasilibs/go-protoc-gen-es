@@ -33,8 +33,8 @@ func Run(name string, args []string, wasm []byte, stdin io.Reader, stdout io.Wri
 		WithStdout(stdout).
 		WithStdin(stdin).
 		WithRandSource(rand.Reader).
-		WithArgs(args...).
-		WithFSConfig(wazero.NewFSConfig().(sysfs.FSConfig).WithSysFSMount(root, "/"))
+		WithArgs(args...)
+	cfg = cfg.WithFSConfig(wazero.NewFSConfig().(sysfs.FSConfig).WithSysFSMount(root, "/")) //nolint:forcetypeassert
 	for _, env := range os.Environ() {
 		k, v, _ := strings.Cut(env, "=")
 		cfg = cfg.WithEnv(k, v)
