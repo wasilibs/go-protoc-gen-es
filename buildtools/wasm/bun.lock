@@ -4,12 +4,12 @@
     "": {
       "name": "wasm",
       "dependencies": {
-        "@bufbuild/protobuf": "2.8.0",
-        "@bufbuild/protoc-gen-es": "2.8.0",
-        "@bufbuild/protoplugin": "2.8.0",
+        "@bufbuild/protobuf": "2.9.0",
+        "@bufbuild/protoc-gen-es": "2.9.0",
+        "@bufbuild/protoplugin": "2.9.0",
       },
       "devDependencies": {
-        "@types/node": "^24.3.1",
+        "@types/node": "^24.5.2",
         "@types/quickjs": "github:Gottox/quickjs-dts",
         "prettier": "^3.6.2",
         "typescript": "^5.9.2",
@@ -17,13 +17,13 @@
     },
   },
   "packages": {
-    "@bufbuild/protobuf": ["@bufbuild/protobuf@2.8.0", "", {}, "sha512-r1/0w5C9dkbcdjyxY8ZHsC5AOWg4Pnzhm2zu7LO4UHSounp2tMm6Y+oioV9zlGbLveE7YaWRDUk48WLxRDgoqg=="],
+    "@bufbuild/protobuf": ["@bufbuild/protobuf@2.9.0", "", {}, "sha512-rnJenoStJ8nvmt9Gzye8nkYd6V22xUAnu4086ER7h1zJ508vStko4pMvDeQ446ilDTFpV5wnoc5YS7XvMwwMqA=="],
 
-    "@bufbuild/protoc-gen-es": ["@bufbuild/protoc-gen-es@2.8.0", "", { "dependencies": { "@bufbuild/protobuf": "2.8.0", "@bufbuild/protoplugin": "2.8.0" }, "bin": { "protoc-gen-es": "bin/protoc-gen-es" } }, "sha512-wyCXK7/FOgcHdqP6dWnGNZBJyXcYYUcvZBMBQVgeYjbF5u0OgVsInEYnr2Gu4E2HC7HoxcQZcVlVbwyxeiebDA=="],
+    "@bufbuild/protoc-gen-es": ["@bufbuild/protoc-gen-es@2.9.0", "", { "dependencies": { "@bufbuild/protobuf": "2.9.0", "@bufbuild/protoplugin": "2.9.0" }, "bin": { "protoc-gen-es": "bin/protoc-gen-es" } }, "sha512-g54rrHLKc7fnxN25ikynstRxR19M5G5l/hyqut2JoypJ9iU9QgUE63zEm8PNvVfBd4r5PEzWPfbWy5MNOeuMKQ=="],
 
-    "@bufbuild/protoplugin": ["@bufbuild/protoplugin@2.8.0", "", { "dependencies": { "@bufbuild/protobuf": "2.8.0", "@typescript/vfs": "^1.5.2", "typescript": "5.4.5" } }, "sha512-kwZeZAz6jmDC571Wf/f5cDX02IjvPmtdspdxW/hbLS+bnZHkXMW4StaW+irGd4TkykvHD4fFgBnPG/O1x8OgXw=="],
+    "@bufbuild/protoplugin": ["@bufbuild/protoplugin@2.9.0", "", { "dependencies": { "@bufbuild/protobuf": "2.9.0", "@typescript/vfs": "^1.5.2", "typescript": "5.4.5" } }, "sha512-uoiwNVYoTq+AyqaV1L6pBazGx5fXOO89L0NSR9/7hEfo0Y8n9T1jsKGu4mkitLmP3z+8gJREaule1mMuKBPyYw=="],
 
-    "@types/node": ["@types/node@24.3.1", "", { "dependencies": { "undici-types": "~7.10.0" } }, "sha512-3vXmQDXy+woz+gnrTvuvNrPzekOi+Ds0ReMxw0LzBiK3a+1k0kQn9f2NWk+lgD4rJehFUmYy2gMhJ2ZI+7YP9g=="],
+    "@types/node": ["@types/node@24.5.2", "", { "dependencies": { "undici-types": "~7.12.0" } }, "sha512-FYxk1I7wPv3K2XBaoyH2cTnocQEu8AOZ60hPbsyukMPLv5/5qr7V1i8PLHdl6Zf87I+xZXFvPCXYjiTFq+YSDQ=="],
 
     "@types/quickjs": ["@types/quickjs@github:Gottox/quickjs-dts#c4bbd81", {}, "Gottox-quickjs-dts-c4bbd81"],
 
@@ -37,7 +37,7 @@
 
     "typescript": ["typescript@5.9.2", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-CWBzXQrc/qOkhidw1OzBTQuYRbfyxDXJMVJ1XNwUHGROVmuaeiEm3OslpZ1RV96d7SKKjZKrSJu3+t/xlw3R9A=="],
 
-    "undici-types": ["undici-types@7.10.0", "", {}, "sha512-t5Fy/nfn+14LuOc2KNYg75vZqClpAiqscVvMygNnlsHBFpSXdJaYtXMcdNLpl/Qvc3P2cB3s6lOV51nqsFq4ag=="],
+    "undici-types": ["undici-types@7.12.0", "", {}, "sha512-goOacqME2GYyOZZfb5Lgtu+1IDmAlAEu5xnD3+xTzS10hT0vzpf0SPjkXwAw9Jm+4n/mQGDP3LO8CPbYROeBfQ=="],
 
     "@bufbuild/protoplugin/typescript": ["typescript@5.4.5", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ=="],
   }
