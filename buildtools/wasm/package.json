@@ -19,6 +19,6 @@
     "@types/quickjs": "github:Gottox/quickjs-dts",
     "@types/node": "^25.0.10",
     "prettier": "^3.8.1",
-    "typescript": "^5.9.3"
+    "typescript": "^6.0.0"
   }
 }
