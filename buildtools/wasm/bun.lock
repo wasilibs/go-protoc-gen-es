@@ -1,6 +1,5 @@
 {
   "lockfileVersion": 1,
-  "configVersion": 0,
   "workspaces": {
     "": {
       "name": "wasm",
@@ -10,10 +9,10 @@
         "@bufbuild/protoplugin": "2.11.0",
       },
       "devDependencies": {
-        "@types/node": "^25.0.10",
+        "@types/node": "^25.5.0",
         "@types/quickjs": "github:Gottox/quickjs-dts",
         "prettier": "^3.8.1",
-        "typescript": "^6.0.0",
+        "typescript": "^6.0.2",
       },
     },
   },
@@ -24,9 +23,9 @@
 
     "@bufbuild/protoplugin": ["@bufbuild/protoplugin@2.11.0", "", { "dependencies": { "@bufbuild/protobuf": "2.11.0", "@typescript/vfs": "^1.6.2", "typescript": "5.4.5" } }, "sha512-lyZVNFUHArIOt4W0+dwYBe5GBwbKzbOy8ObaloEqsw9Mmiwv2O48TwddDoHN4itylC+BaEGqFdI1W8WQt2vWJQ=="],
 
-    "@types/node": ["@types/node@25.0.10", "", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-zWW5KPngR/yvakJgGOmZ5vTBemDoSqF3AcV/LrO5u5wTWyEAVVh+IT39G4gtyAkh3CtTZs8aX/yRM82OfzHJRg=="],
+    "@types/node": ["@types/node@25.5.0", "", { "dependencies": { "undici-types": "~7.18.0" } }, "sha512-jp2P3tQMSxWugkCUKLRPVUpGaL5MVFwF8RDuSRztfwgN1wmqJeMSbKlnEtQqU8UrhTmzEmZdu2I6v2dpp7XIxw=="],
 
-    "@types/quickjs": ["@types/quickjs@github:Gottox/quickjs-dts#c4bbd81", {}, "Gottox-quickjs-dts-c4bbd81", "sha512-eXcR8Op7BskSsXyrE9qtkmQE/VNBdWTvgZmeEYtdVwV9xCv+DAmwEYe1VGgOvd3FQxI/z4H3nzfDIryPskhRxA=="],
+    "@types/quickjs": ["@types/quickjs@github:Gottox/quickjs-dts#c4bbd81", {}, "Gottox-quickjs-dts-c4bbd81"],
 
     "@typescript/vfs": ["@typescript/vfs@1.6.2", "", { "dependencies": { "debug": "^4.1.1" }, "peerDependencies": { "typescript": "*" } }, "sha512-hoBwJwcbKHmvd2QVebiytN1aELvpk9B74B4L1mFm/XT1Q/VOYAWl2vQ9AWRFtQq8zmz6enTpfTV8WRc4ATjW/g=="],
 
@@ -38,7 +37,7 @@
 
     "typescript": ["typescript@6.0.2", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-bGdAIrZ0wiGDo5l8c++HWtbaNCWTS4UTv7RaTH/ThVIgjkveJt83m74bBHMJkuCbslY8ixgLBVZJIOiQlQTjfQ=="],
 
-    "undici-types": ["undici-types@7.16.0", "", {}, "sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw=="],
+    "undici-types": ["undici-types@7.18.2", "", {}, "sha512-AsuCzffGHJybSaRrmr5eHr81mwJU3kjw6M+uprWvCXiNeN9SOGwQ3Jn8jb8m3Z6izVgknn1R0FTCEAP2QrLY/w=="],
 
     "@bufbuild/protoplugin/typescript": ["typescript@5.4.5", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ=="],
   }

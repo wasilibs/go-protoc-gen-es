@@ -17,8 +17,8 @@
   },
   "devDependencies": {
     "@types/quickjs": "github:Gottox/quickjs-dts",
-    "@types/node": "^25.0.10",
+    "@types/node": "^25.5.0",
     "prettier": "^3.8.1",
-    "typescript": "^6.0.0"
+    "typescript": "^6.0.2"
   }
 }
