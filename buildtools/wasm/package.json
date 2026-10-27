@@ -9,7 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "packageManager": "bun@1.4.3",
+  "packageManager": "bun@1.4.4",
   "dependencies": {
     "@bufbuild/protobuf": "2.16.0",
     "@bufbuild/protoc-gen-es": "2.16.0",
